@@ -34,6 +34,7 @@ The plugin uses server internals (NMS) for fast island pasting, so it only runs 
 * **Jukebox**: houses play Note Block Studio songs to everyone on the plot (VIP).
 * **Pro tools**: `//set`, `//walls`, `//copy`, `//cut`, `//paste`, `//undo` inside your own plot.
 * **Lobby NPCs**: skinned NPCs that open Browse Houses, My Houses or a random house.
+* **Carpenter**: a helper NPC in every house with shortcuts to every house menu, building tips, and a spot you choose.
 * **Exploit protection**: creative mode and free blocks never leave the housing world. Ender chests are closed, other plugins' commands are limited to a list you control, and teleports respect bans.
 * **Reconnect grace**: rejoin within 15 minutes and you are put back exactly where you stood.
 * **Fully configurable**: every menu, message and scoreboard line can be changed.

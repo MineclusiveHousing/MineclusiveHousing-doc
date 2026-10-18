@@ -70,6 +70,14 @@
 | `pro-tools.particle-ticks` | `10` | Redraw speed |
 | `pro-tools.particle-colour` | `255, 40, 40` | Particle colour (red, green, blue) |
 
+## Carpenter
+
+| Key | Default | Meaning |
+| --- | --- | --- |
+| `carpenter.enabled` | `true` | The helper NPC in every house (see [Carpenter](carpenter.md)) |
+| `carpenter.name` | `&8[NPC] &aCarpenter` | Its label |
+| `carpenter.skin` | `""` | Player name whose skin it wears; empty = default skin |
+
 ## Display
 
 | Key | Meaning |

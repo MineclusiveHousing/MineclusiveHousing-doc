@@ -56,13 +56,14 @@ You get a set of tools in your hotbar:
 
 The players' spawn point is the spot where you placed the plot.
 
-After **Save**, the chat asks you three questions. Type the number of your choice:
+After **Save**, the chat asks you four questions:
 
-1. **Biome**, for example jungle, snowy taiga, desert, plains
-2. **Sky**: day, night or sunset
-3. **Weather**: clear, rain, storm or thunder
+1. **Biome**, for example jungle, snowy taiga, desert, plains (type the number)
+2. **Sky**: day, night or sunset (type the number)
+3. **Weather**: clear, rain, storm or thunder (type the number)
+4. **Carpenter**: walk to where the [Carpenter](carpenter.md) should stand, face the way it should face, and type `here`. Type `skip` to put it next to the spawn instead.
 
-Type `cancel` to stop. The theme is saved, and the red wool preview is removed.
+Type `cancel` at any question to stop. When the last question is answered the theme is saved, and the red wool preview is removed.
 
 To abort the whole editor at any time:
 
@@ -94,6 +95,25 @@ If no default is set yet, you can also run `/housing create template <name>` for
 ```
 
 Run it while standing in the template world. It registers the world straight away, finds a safe spawn automatically and gives it a 32×32 plot, with plains, day and clear weather. Use it to test quickly, then refine with the theme editor.
+
+## Checking the spawn and Carpenter spots
+
+While you are in a template world, show stand-ins where players arrive and where the Carpenter stands:
+
+```
+/housing world dummy
+```
+
+| Dummy | Shows |
+| --- | --- |
+| **[DUMMY] Spawnpoint** | Where players arrive in houses of this theme |
+| **[DUMMY] Carpenter point** | Where the Carpenter starts (only if the theme has a Carpenter spot) |
+
+Run the command again to hide them. The dummies glow so they are easy to find, can't be hit, are never saved into the template, and disappear when the template closes.
+
+A template that isn't a theme yet (before its first setup) shows nothing.
+
+If you change the spots while the dummies are showing, run `/housing world dummy` twice to refresh them.
 
 ## Managing themes
 

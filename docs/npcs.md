@@ -64,3 +64,6 @@ An NPC runs all of its actions in order. `{player}` becomes the clicker's name.
 * NPCs can't be placed in the housing world, hurt or pushed.
 * Head turning is off by default.
 * Each NPC is one real entity, so they cost the same with 10 or 1000 players online.
+* Skins are looked up from Mojang by player name, so they work on offline-mode servers too.
+
+Looking for the NPC inside houses? See [Carpenter](carpenter.md).

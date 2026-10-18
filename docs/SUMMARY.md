@@ -21,6 +21,7 @@
 ## Features
 
 * [NPCs](npcs.md)
+* [Carpenter](carpenter.md)
 
 ## Add-ons
 
