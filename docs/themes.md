@@ -76,7 +76,7 @@ The choices offered are set in `config.yml` under `theme-presets` (biomes, skies
 
 ## 4. Set the default theme
 
-New houses start with the default theme. Set it in `config.yml`:
+New houses start with the default theme. Set it in `config.yml` to the **template folder name**:
 
 ```yaml
 themes:
@@ -84,6 +84,8 @@ themes:
 ```
 
 Then run `/housing reload`.
+
+If no default is set yet, you can also run `/housing create template <name>` for a theme that already exists: the plugin offers to make it the default and asks you to run the command again to confirm.
 
 ## Quick template without the editor
 
