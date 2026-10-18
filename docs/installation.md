@@ -3,7 +3,7 @@
 ## 1. Requirements
 
 * A Spigot **1.21.11** server running **Java 21**
-* A **MySQL** database and user
+* A **MySQL** server and a user that can create databases (or a database your host made for you)
 * A **Redis** server (local is fine)
 * Optional: PlaceholderAPI, Vault with an economy plugin
 
