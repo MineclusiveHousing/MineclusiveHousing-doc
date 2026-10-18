@@ -64,4 +64,4 @@ Build template worlds and register them as themes (see [Installation](installati
 
 ## PlaceholderAPI
 
-With PlaceholderAPI installed, `%housing_*%` placeholders are available to other plugins.
+With PlaceholderAPI installed, `%housing_*%` placeholders are available to other plugins. See [Placeholders](placeholders.md) for the full list.

@@ -38,6 +38,19 @@ Use `&` colour codes. `<player>` is replaced with the owner's name. Leave `messa
 A fresh install ships with two placeholder lines, `test 1` and `test 2`. Replace them with your own text or empty the list.
 {% endhint %}
 
+## Theme editor
+
+Admins inside a template world (`/housing world tp <name>`) see their own action bar instead:
+
+```yaml
+housing:
+  action-bar:
+    editor-edit: "&eYou are editing &b<template> &e- changes are saved"
+    editor-readonly: "&eYou are viewing &b<template> &e- read-only"
+```
+
+`<template>` is the template's name. It shows for as long as they're in the template world.
+
 ## Timing: config.yml
 
 ```yaml

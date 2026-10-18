@@ -39,6 +39,7 @@ Lava, fire, portals, TNT, command blocks and other dangerous blocks can't be use
 | `/housing create theme <name>` | Register a template as a theme |
 | `/housing theme list` · `scan` | List or rescan themes |
 | `/housing theme dummy` | Show or hide the spawn and Carpenter stand-ins in a template world |
+| `/housing theme set spawn\|carpenter` | Move the theme's spawn or Carpenter spot to where you stand |
 | `/housing remove template\|theme <name>` | Remove one |
 | `/housing debug data\|light` | Debug information |
 | `/housing reload` | Reload config, messages, menus, themes and NPCs |

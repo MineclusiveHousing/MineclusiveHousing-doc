@@ -8,14 +8,14 @@ You need at least one theme before players can open houses.
 
 | Word | Meaning |
 | --- | --- |
-| **Template world** | A normal Minecraft world folder in `plugins/HousingPlugin/templates/<name>`. This is what gets copied for every house. |
+| **Template world** | A normal Minecraft world folder in `plugins/HousingPlugin/themes/<name>`. This is what gets copied for every house. |
 | **Theme** | A template world plus its plot, spawn, biome, sky and weather. Players pick themes. |
 | **Plot** | The square area inside the theme where the owner may build. Everything outside it is protected. |
 
 ## 1. Add the template world
 
 1. Build the island in any world (single player is fine). Keep it compact: the island is pasted for every house.
-2. Copy that world's folder into `plugins/HousingPlugin/templates/`, for example `plugins/HousingPlugin/templates/forest/`.
+2. Copy that world's folder into `plugins/HousingPlugin/themes/`, for example `plugins/HousingPlugin/themes/forest/`.
 3. Check it shows up:
 
 ```
@@ -29,6 +29,8 @@ You need at least one theme before players can open houses.
 ```
 
 You're teleported into the template. In `edit` mode your changes are saved back into the template. Use `readonly` instead of `edit` to look without changing anything.
+
+While you're in a template world, the sidebar shows the **Theme Editor** scoreboard: the template's name, edit or read-only mode, whether it's set up as a theme yet, its Carpenter spot, and whether the dummies are showing. Change its lines under `scoreboard.template` in `config.yml`.
 
 When you're done:
 
@@ -96,6 +98,17 @@ If no default is set yet, you can also run `/housing create template <name>` for
 
 Run it while standing in the template world. It registers the world straight away, finds a safe spawn automatically and gives it a 32×32 plot, with plains, day and clear weather. Use it to test quickly, then refine with the theme editor.
 
+## Moving the spawn or Carpenter spot
+
+Stand on the new spot in the template world (facing the right way for the Carpenter) and run:
+
+| Command | Sets |
+| --- | --- |
+| `/housing theme set spawn` | Where players arrive in houses of this theme |
+| `/housing theme set carpenter` | Where the Carpenter starts, and the way it faces |
+
+Only works for a template that's already a theme. The dummies and the editor scoreboard update straight away. Houses whose owner already moved their Carpenter keep their own spot.
+
 ## Checking the spawn and Carpenter spots
 
 While you are in a template world, show stand-ins where players arrive and where the Carpenter stands:
@@ -109,7 +122,7 @@ While you are in a template world, show stand-ins where players arrive and where
 | **[DUMMY] Spawnpoint** | Where players arrive in houses of this theme |
 | **[DUMMY] Carpenter point** | Where the Carpenter starts (only if the theme has a Carpenter spot) |
 
-Run the command again to hide them. The dummies glow so they are easy to find, can't be hit, are never saved into the template, and disappear when the template closes.
+They show automatically when you teleport into a template that's already a theme. Run the command to hide them, and again to show them. The dummies glow so they are easy to find, can't be hit, are never saved into the template, and disappear when the template closes.
 
 A template that isn't a theme yet (before its first setup) shows nothing.
 

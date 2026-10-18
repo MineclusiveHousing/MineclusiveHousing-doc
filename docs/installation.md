@@ -43,7 +43,7 @@ On a hosting panel that gives you a ready-made database, put that database's nam
 
 ## 4. Templates and themes
 
-Houses are pasted from **template worlds** in `plugins/HousingPlugin/templates/<name>`. Build or copy a world there, then as an admin:
+Houses are pasted from **template worlds** in `plugins/HousingPlugin/themes/<name>`. Build or copy a world there, then as an admin:
 
 ```
 /housing world tp <name> edit        load and edit it
