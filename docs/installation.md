@@ -52,7 +52,7 @@ Houses are pasted from **template worlds** in `plugins/HousingPlugin/templates/<
 /housing world save                  save and return to the lobby
 ```
 
-Set `themes.default-theme` in `config.yml` to the theme new houses start with.
+Set `themes.default-theme` in `config.yml` to the theme new houses start with. The full guide, including the theme editor, is on the [Themes](themes.md) page.
 
 ## 5. Start and test
 

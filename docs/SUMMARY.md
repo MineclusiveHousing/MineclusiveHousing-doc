@@ -8,6 +8,10 @@
 * [Permissions](permissions.md)
 * [Config](config.md)
 
+## Setup
+
+* [Themes](themes.md)
+
 ## Customize
 
 * [Customization](customization.md)
