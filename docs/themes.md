@@ -55,6 +55,10 @@ When you're done:
 | `/housing world save` | Save your edits and go back to the lobby |
 | `/housing world unsave` | Throw away edits since the last save and go back |
 
+{% hint style="warning" %}
+Only `/housing world save` writes your changes. If you leave the server while editing, you come back in the lobby, and anything since your last save is thrown away (the template closes without saving once nobody else is in it).
+{% endhint %}
+
 ## 3. Create the theme
 
 Stand in the template world and start the theme editor:
