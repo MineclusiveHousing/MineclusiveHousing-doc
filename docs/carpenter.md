@@ -54,7 +54,7 @@ carpenter:
 * `tips`: the pages of the Building Tips book, one entry per page (write `\n` for a new line)
 * the messages shown when moving, removing or bringing it back
 
-Set where the Carpenter starts for each theme in the theme setup, and check it with `/housing world dummy` (see [Themes](themes.md)).
+Set where the Carpenter starts for each theme in the theme setup, and check it with `/housing theme dummy` (see [Themes](themes.md)).
 
 {% hint style="info" %}
 Each open house has one Carpenter entity and one label, so the cost stays small with many houses open.

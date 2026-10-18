@@ -101,7 +101,7 @@ Run it while standing in the template world. It registers the world straight awa
 While you are in a template world, show stand-ins where players arrive and where the Carpenter stands:
 
 ```
-/housing world dummy
+/housing theme dummy
 ```
 
 | Dummy | Shows |
@@ -113,7 +113,7 @@ Run the command again to hide them. The dummies glow so they are easy to find, c
 
 A template that isn't a theme yet (before its first setup) shows nothing.
 
-If you change the spots while the dummies are showing, run `/housing world dummy` twice to refresh them.
+If you change the spots while the dummies are showing, run `/housing theme dummy` twice to refresh them.
 
 ## Managing themes
 
