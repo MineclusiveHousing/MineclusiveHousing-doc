@@ -30,7 +30,23 @@ You need at least one theme before players can open houses.
 
 You're teleported into the template. In `edit` mode your changes are saved back into the template. Use `readonly` instead of `edit` to look without changing anything.
 
-While you're in a template world, the sidebar shows the **Theme Editor** scoreboard: the template's name, edit or read-only mode, whether it's set up as a theme yet, its Carpenter spot, and whether the dummies are showing. Change its lines under `scoreboard.template` in `config.yml`.
+While you're in a template world, the sidebar shows the **Theme Editor** scoreboard:
+
+```
+THEME EDITOR
+10/18/26 Editor
+
+Template: default
+Mode: Edit
+Theme: default
+Carpenter: Next to spawn
+Dummies: Shown
+
+/housing theme dummy
+/housing world save
+```
+
+It shows the template's name, edit or read-only mode, whether it's set up as a theme yet, its Carpenter spot, and whether the dummies are showing. Change its title and lines under `scoreboard.template` in `config.yml`, using `<date>`, `<template>`, `<mode>`, `<theme>`, `<carpenter>` and `<dummies>`.
 
 When you're done:
 
