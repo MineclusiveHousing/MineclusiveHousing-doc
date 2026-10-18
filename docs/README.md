@@ -6,11 +6,11 @@ Hypixel-style housing for your server. Every player gets their own island, built
 
 ## Compatibility
 
-| | |
+| Requirement | Version |
 | --- | --- |
 | Server | Spigot **1.21.11** (tested). Paper builds of 1.21.11 should work but are not the tested platform. |
 | Java | **21** or newer |
-| Database | **MySQL** (8.x recommended): houses, settings and building are stored here |
+| Database | **MySQL** (8.x recommended): houses, settings and building are stored here. The database and tables are created for you. |
 | Cache | **Redis**: required; coordinates island slots and sessions |
 | Optional | **PlaceholderAPI** (`%housing_*%` placeholders), **Vault** + an economy plugin (paid plot upgrades) |
 | Add-on | **FurnitureStudio**: in-game furniture builder, needs MineclusiveHousing |

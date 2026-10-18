@@ -56,7 +56,7 @@ Put `.nbs` files (Note Block Studio) in `plugins/HousingPlugin/songs/` and run `
 
 ## Themes
 
-Build template worlds and register them as themes (see [Installation](installation.md#5-templates-and-themes)). Players switch themes from the Housing Menu; the island is repasted in place with the theme's biome, sky and weather.
+Build template worlds and register them as themes (see [Installation](installation.md#4-templates-and-themes)). Players switch themes from the Housing Menu; the island is repasted in place with the theme's biome, sky and weather.
 
 ## PlaceholderAPI
 

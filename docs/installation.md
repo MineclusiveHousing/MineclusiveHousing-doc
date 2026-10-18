@@ -7,18 +7,7 @@
 * A **Redis** server (local is fine)
 * Optional: PlaceholderAPI, Vault with an economy plugin
 
-## 2. Create the database
-
-```sql
-CREATE DATABASE mineclusivehousing;
-CREATE USER 'mineclusivehousing'@'%' IDENTIFIED BY 'change-me';
-GRANT ALL PRIVILEGES ON mineclusivehousing.* TO 'mineclusivehousing'@'%';
-FLUSH PRIVILEGES;
-```
-
-Tables are created automatically on first start.
-
-## 3. Install the jars
+## 2. Install the jars
 
 1. Put `MineclusiveHousing-<version>.jar` in `plugins/`.
 2. Optional: put `FurnitureStudio.jar` in `plugins/` too.
@@ -28,9 +17,9 @@ Tables are created automatically on first start.
 When you update, **delete the old MineclusiveHousing jar** before starting the server. Two versions in `plugins/` will both try to load.
 {% endhint %}
 
-## 4. Connect MySQL and Redis
+## 3. Connect MySQL and Redis
 
-Open `plugins/HousingPlugin/config.yml`:
+Open `plugins/HousingPlugin/config.yml` and fill in your MySQL and Redis details:
 
 ```yaml
 redis:
@@ -43,10 +32,16 @@ database:
   port: 3306
   name: mineclusivehousing
   user: mineclusivehousing
-  password: change-me
+  password: your-password
 ```
 
-## 5. Templates and themes
+You don't need to create anything in MySQL yourself: on the next start the plugin creates the database named in `database.name` (if it doesn't exist yet) and all its tables.
+
+{% hint style="info" %}
+On a hosting panel that gives you a ready-made database, put that database's name, user and password here. The plugin uses it as it is.
+{% endhint %}
+
+## 4. Templates and themes
 
 Houses are pasted from **template worlds** in `plugins/HousingPlugin/templates/<name>`. Build or copy a world there, then as an admin:
 
@@ -59,7 +54,7 @@ Houses are pasted from **template worlds** in `plugins/HousingPlugin/templates/<
 
 Set `themes.default-theme` in `config.yml` to the theme new houses start with.
 
-## 6. Start and test
+## 5. Start and test
 
 Start the server, join, and run `/house`. You should get the My Houses menu and, after clicking a house, arrive on your island.
 
