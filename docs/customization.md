@@ -34,6 +34,10 @@ Every value is optional. Remove a key and that button uses the built-in default,
 
 `messages.yml` uses `&` colour codes and `<placeholders>` such as `<player>`. Missing keys are added back automatically on start, and the log lists them.
 
+## Action bar
+
+The Build/Social mode reminder and rotating tips above the hotbar. See [Action bar](action-bar.md).
+
 ## Scoreboards
 
 The housing and lobby scoreboards are in `config.yml` under `scoreboard`: animated title frames, frame speed and lines. Placeholders: `<date>`, `<slot>`, `<house_name>`, `<guests>`, `<cookies>`.
