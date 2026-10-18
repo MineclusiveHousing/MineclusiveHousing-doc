@@ -4,9 +4,6 @@
 
 * [MineclusiveHousing](README.md)
 * [Installation](installation.md)
-
-## Reference
-
 * [Commands](commands.md)
 * [Permissions](permissions.md)
 * [Config](config.md)
