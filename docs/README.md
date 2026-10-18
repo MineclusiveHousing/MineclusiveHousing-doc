@@ -2,7 +2,7 @@
 
 Hypixel-style housing for your server. Every player gets their own island, built from a template you design, with their building saved between visits. Players decorate, invite friends, rate each other's houses with cookies and browse what everyone else has built.
 
-**Current version: 5.1.2**
+**Current version: 1.0**
 
 ## Compatibility
 
