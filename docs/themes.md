@@ -39,6 +39,7 @@ THEME EDITOR
 Template: default
 Mode: Edit
 Theme: default
+Spawnpoint: Set
 Carpenter: Next to spawn
 Dummies: Shown
 
@@ -46,7 +47,7 @@ Dummies: Shown
 /housing world save
 ```
 
-It shows the template's name, edit or read-only mode, whether it's set up as a theme yet, its Carpenter spot, and whether the dummies are showing. Change its title and lines under `scoreboard.template` in `config.yml`, using `<date>`, `<template>`, `<mode>`, `<theme>`, `<carpenter>` and `<dummies>`.
+It shows the template's name, edit or read-only mode, whether it's set up as a theme yet, its Carpenter spot, and whether the dummies are showing. Change its title and lines under `scoreboard.template` in `config.yml`, using `<date>`, `<template>`, `<mode>`, `<theme>`, `<spawn>`, `<carpenter>` and `<dummies>`.
 
 When you're done:
 
@@ -124,7 +125,7 @@ Stand on the new spot in the template world (facing the right way for the Carpen
 
 | Command | Sets |
 | --- | --- |
-| `/housing theme set spawn` | Where players arrive in houses of this theme |
+| `/housing theme set spawn` | Where players arrive in houses of this theme, and the way they face |
 | `/housing theme set carpenter` | Where the Carpenter starts, and the way it faces |
 
 Only works for a template that's already a theme. The dummies and the editor scoreboard update straight away. Houses whose owner already moved their Carpenter keep their own spot.
